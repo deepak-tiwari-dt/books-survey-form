@@ -2,4 +2,4 @@
 
 A responsive form made using HTML and CSS.
 
-![image info](./project1/img.png)
+![image info](img.png)
