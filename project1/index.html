@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Books Survey Form</h1>
+      <p id="description" class="description text-center">Thank you for taking the time to fill this form</p>
+    </header>
+    <form id="survey-form">
+      <div>
+        <a href="https://youtu.be/eTFy8RnUkoU" target="_blank">
+          <img class="books" src="./books.jpeg" alt="books">
+        </a>
+      </div>
+      <br>
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="18" max="100" class="form-control" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <p>Favorite genre you like?</p>
+        <select id="dropdown" name="genres" class="form-control" required>
+          <option disabled selected value>Select favorite genre</option>
+          <option value="fiction">Fiction</option>
+          <option value="novel">Novel</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="thriller">Thriller</option>
+          <option value="non-fiction">Nonfiction</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend books to non-readers?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+        </label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+        </label>
+        <label>
+          <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Best self-help book you would recommend to beginners?</p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="atomic-habits">Atomic Habits by James Clear</option>
+          <option value="the-four-agreements">The Four Agreements by Don Miguel Ruiz</option>
+          <option value="the-courage-to-be-disliked">The Courage To Be Disliked by Ichiro Kishimi & Fumitake Koga</option>
+          <option value="rich-dad-poor-dad">Rich Dad Poor Dad by Robert T. Kiyosaki</option>
+          <option value="think-and-grow-rich">Think And Grow Rich by Napoleon Hill</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>
+          What would you like to see improved?
+          <span class="clue"> (check all that apply) </span>
+        </p>
+        <label><input name="prefer" value="genres" type="checkbox" class="input-checkbox">Genres</label>
+        <label><input name="prefer" value="book-recommendations" type="checkbox" class="input-checkbox">Book recommendations</label>
+      </div>
+      <div class="form-group">
+        <p>Any comments on the books you read recently?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <label>Date</label>
+      <input class="date" type="date" value="date">
+      <br><br>
+      <label>Time</label>
+      <input class="time" type="time" value="time">
+      <br><br>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
